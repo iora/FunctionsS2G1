@@ -26,6 +26,7 @@ int main(void) {
     printf("The sum of squares of the array is: %i\n", getSumOfSquares(row));
     printf("The average of the array is: %f\n", getAverage(row));
 	printf("The sum of each element in the array is: %i\n", getSum(row));
+	printf("The subtraction of all values in the array is: %i\n", subtractAllValues(row));
 	printAsChars(row);
 
 	return 1;
@@ -34,6 +35,7 @@ int main(void) {
 void printGroupMemberNames() {
 	printf("Socretquuliqaa Lee\n"); //added by Socretquuliqaa Lee
 	printf("Sereysathia Luy\n");	//added by Sereysathia Luy
+	printf("Sokhavirith Sorn\n"); //added by Sokhavirith Sorn
 }
 
 /**
@@ -108,7 +110,7 @@ void printAsChars(int myArray[]){
 
 int subtractAllValues(int myArray[])
 {
-	int i,result;
+	int i,result=0;
 	for(i=0;i<500;i++)
 		result-=myArray[i];
 	return result;
