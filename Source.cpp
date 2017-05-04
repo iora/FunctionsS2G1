@@ -103,3 +103,14 @@ void printAsChars(int myArray[]){
 	}
 	printf("\n");
 }//end of printAsChars()
+
+/*Sokhavirith*/
+
+int subtractAllValues(int myArray[])
+{
+	int i,result;
+	for(i=0;i<500;i++)
+		result-=myArray[i];
+	return result;
+}
+
