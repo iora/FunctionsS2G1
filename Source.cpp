@@ -28,6 +28,7 @@ int main(void) {
 	printf("The sum of each element in the array is: %i\n", getSum(row));
 	printf("The subtraction of all values in the array is: %i\n", subtractAllValues(row));
 	printAsChars(row);
+	printf("The invert all value is: %f", invertAllValues(row));
 
 	return 1;
 }
@@ -36,6 +37,7 @@ void printGroupMemberNames() {
 	printf("Socretquuliqaa Lee\n"); //added by Socretquuliqaa Lee
 	printf("Sereysathia Luy\n");	//added by Sereysathia Luy
 	printf("Sokhavirith Sorn\n"); //added by Sokhavirith Sorn
+	printf("Sothearoth Norng");	//added by Sothearoth Norng
 }
 
 /**
@@ -106,7 +108,12 @@ void printAsChars(int myArray[]){
 	printf("\n");
 }//end of printAsChars()
 
-/*Sokhavirith*/
+/**
+ * A function to substract all values.
+ * @param myArray - the input array
+ * @return int - the substracted value
+ * @author Sorn Sokhavirith
+ **/
 
 int subtractAllValues(int myArray[])
 {
@@ -114,5 +121,20 @@ int subtractAllValues(int myArray[])
 	for(i=0;i<500;i++)
 		result-=myArray[i];
 	return result;
-}
+}	//end of substractAllValues()
 
+/**
+ * A function to invert all values in array.
+ * @param myArray - the input array
+ * @return invert - the inverted array
+ * @author Sothearoth Norng
+ **/
+float invertAllValues(int myArray[]) {
+	float sum = 0;
+	float invert;
+	for (int i = 0; i < 500; i++) {
+		sum += myArray[i];
+	}
+	invert = pow(sum,-1);
+	return invert;
+}	//end of invertAllValues()
